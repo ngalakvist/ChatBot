@@ -86,5 +86,20 @@ def bag_of_word(s,words):
     s_words= nltk.word_tokenize(s)
     s_words = [stemmer.stem(word.lower()) for word in s_words]
 
-    
+    for se in s_words :
+        for i, w in enumerate(words):
+            if w== se:
+                bag[i] ==1
+    return numpy.array(bag)
          
+def chat():
+    print("Börja prata med Mdh chat-bot(type quit to quit")
+    while True:
+         inp = input("Du: ")
+         if(inp.lower()=="quit"):
+             break
+
+         results =  model.predict([bag_of_word(inp,words)])
+chat()
+
+
