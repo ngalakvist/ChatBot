@@ -16,7 +16,7 @@ with open("c:/ML/chat_bot/data/intents-mdh.json") as file:
     data = json.load(file)
 
 try:
-    with open(data.pickle, "rb") as f:
+    with open("data.pickle", "rb") as f:
         words,labels,training,output = pickle.load(f)
 except: 
     words = []
@@ -60,8 +60,8 @@ except:
 
     training = numpy.array(training)
     output = numpy.array(output)
-    
-    with open(data.pickle, "rb") as f:
+
+    with open("data.pickle", "wb") as f:
         pickle.dump((words,labels,training,output),f)
 
 #AI Model with tensorflow
@@ -100,6 +100,7 @@ def chat():
              break
 
          results =  model.predict([bag_of_word(inp,words)])
+         print(results)
 chat()
 
 
