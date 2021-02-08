@@ -1,0 +1,29 @@
+Jag har inte fått mitt användar-ID?
+Användar-ID skickas till den mejladress eller mobilnummer du angav när du skapade kontot.
+Jag har inget lösenord till mitt studentkonto. Hur får man det?
+När du skapade kontot valde du ett eget lösenord. Om du glömt det kan du byta till ett nytt: https://account.mdh.se/lostpw/ 
+Jag behöver byta mitt lösenord, hur gör jag det?
+Det gör du via vår kontohantering https://account.mdh.se/default.aspx?ReturnUrl=%2f 
+Jag har glömt mitt lösenord, hur får jag ett nytt?
+Du kan förnya ditt lösenord via vår kontohantering https://account.mdh.se/lostpw/
+Jag kan inte skapa ett studentkonto, hur gör jag?
+Om du läser en uppdragsutbildning eller inte har ett svenskt personnummer så måste du vända dig till studenttorget@mdh.se för att få hjälp med ditt konto.
+Hur skapar man ett studentkonto?
+Så länge du har en antagning eller registrering på MDH (ej uppdragsutbildningar) och har ett svenskt personnummer kan du skapa ett studentkonto här: https://account.mdh.se/newaccount/
+När kan jag skapa konto?
+I början av en termin finns ett visst startdatum för skapande av konto, läs noga informationen på sidan för ny student: https://www.mdh.se/student/ny-student
+Annars kan det bero på att din antagning, registrering eller omregistrering inte finns i systemet än. Kontakta Studenttorget på studenttorget@mdh.se eller via 021-101310
+Jag har inte svenskt personnummer. Hur skapar jag ett studentkonto?
+Du kontaktar studenttorget@mdh.se så hjälper de dig.
+Jag har ett gammalt studentkonto, kan jag använda det fortfarande?
+Om det var mer än 4 terminer sedan du senast var registrerad på MDH så har ditt konto blivit gallrat och du behöver skapa ett nytt via https://account.mdh.se/newaccount/ 
+Annars kan du använda ditt tidigare konto men du behöver kanske uppdatera lösenordet: https://account.mdh.se/lostpw/
+Jag har glömt mitt användar-ID, hur får jag reda på det?
+Via vår kontohantering kan du ta reda på ditt användar-ID: https://account.mdh.se/default.aspx?ReturnUrl=%2f 
+Vad är användar-ID?
+Användar-ID eller användarnamn är det du använder för att logga in i våra system, förutom studentmejl. Där loggar du in med hela mejladressen: användar-ID@student.mdh.se
+Vad är användarnamn?
+Användar-ID eller användarnamn är det du använder för att logga in i våra system, förut om studentmejl. Där loggar du in med hela mejladressen: användar-ID@student.mdh.se
+Hur loggar jag in på min studentmejl?
+Du loggar in på din studentjmejl med användar-ID@student.mdh.se på https://www.mdh.se/student 
+
