@@ -1,5 +1,10 @@
 {"intents": [
-        {"tag": "användarid?",
+        {"tag": "Hej",
+                "patterns": ["hej", "vad heter du", "kan du hjälpa mig", "vad kan du?", "mdh","kan du hjälpa mig?"],
+                "responses": ["Jag är Sveriges bästa och smarteste chatbot att hälpa mdh studenterna med deras student konto","Vad behöver du?","Du kan fråga mid om studentkonto"],
+                "context_set": ""
+               },
+        {"tag": "användarid",
          "patterns": ["användar-ID?", "Jag har inte fått mitt användar-ID?", "Vad är användar-ID?", "användarid", "Vad är användarnamn?","Jag har glömt mitt användar-ID"],
          "responses": ["Användar-ID skickas till den mejladress eller mobilnummer du angav när du skapade kontot.", "Via vår kontohantering kan du ta reda på ditt användar-ID:https://account.mdh.se/default.aspx?ReturnUrl=%2f ","Där loggar du in med hela mejladressen: användar-ID@student.mdh.se", "Användar-ID eller användarnamn är det du använder för att logga in i våra system, förutom studentmejl","Via vår kontohantering kan du ta reda på ditt användar-ID: https://account.mdh.se/default.aspx?ReturnUrl=%2f"],
          "context_set": ""
