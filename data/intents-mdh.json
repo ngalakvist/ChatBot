@@ -1,7 +1,7 @@
 {"intents": [
         {"tag": "Hej",
-                "patterns": ["hej", "vad heter du", "kan du hjälpa mig", "vad kan du?", "mdh","kan du hjälpa mig?"],
-                "responses": ["Jag är Sveriges bästa och smarteste chatbot att hälpa mdh studenterna med deras student konto","Vad behöver du?","Du kan fråga mid om studentkonto"],
+                "patterns": ["hej", "vad heter du", "kan du hjälpa mig", "vad kan du göra?", "mdh","kan du hjälpa mig?"],
+                "responses": ["Hjälpa mdh studenterna med deras studentkonto och inloggning","Vad behöver du?","Du kan fråga mig om studentkonto","Jag är smatare en dig"],
                 "context_set": ""
                },
         {"tag": "användarid",
@@ -16,7 +16,7 @@
         },
         {"tag": "studentkontot",
          "patterns": ["Hur skapar jag ett studentkonto?", "Jag har inte svenskt personnummer", "När kan jag skapa konto?", "Jag kan inte skapa ett studentkonto", "hur gör jag för att skapa studentkonto","skapa"],
-         "responses": ["Om du läser en uppdragsutbildning eller inte har ett svenskt personnummer så måste du vända dig till studenttorget@mdh.se för att få hjälp med ditt konto.", "I början av en termin finns ett visst startdatum för skapande av konto, läs noga informationen på sidan för ny student: https://www.mdh.se/student/ny-student",""],
+         "responses": ["Om du läser en uppdragsutbildning eller inte har ett svenskt personnummer så måste du vända dig till studenttorget@mdh.se", "I början av en termin finns ett visst startdatum för skapande av konto", "läs noga informationen på sidan för ny student: https://www.mdh.se/student/ny-student"],
          "context_set": ""
         },
         {"tag": "gammalt",
@@ -31,7 +31,7 @@
         },
         {"tag": "användarnamn?",
                 "patterns": ["användar-ID eller användernamn?", "Jag har inte fått mitt användar-ID?", "Vad är användar-ID?", "användarid", "Vad är användarnamn?","Jag har glömt mitt användar-ID"],
-                "responses": ["Användar-ID skickas till den mejladress eller mobilnummer du angav när du skapade kontot.", "Via vår kontohantering kan du ta reda på ditt användar-ID:https://account.mdh.se/default.aspx?ReturnUrl=%2f ","Där loggar du in med hela mejladressen: användar-ID@student.mdh.se", "Användar-ID eller användarnamn är det du använder för att logga in i våra system, förutom studentmejl","Via vår kontohantering kan du ta reda på ditt användar-ID: https://account.mdh.se/default.aspx?ReturnUrl=%2f"],
+                "responses": ["Användar-ID skickas till den mejladress eller mobilnummer du angav när du skapade kontot.", "kontohantering kan du ta reda på ditt användar-ID:https://account.mdh.se/default.aspx?ReturnUrl=%2f ","Där loggar du in med hela mejladressen: användar-ID@student.mdh.se", "Användar-ID eller användarnamn är det du använder för att logga in i våra system, förutom studentmejl","Via vår kontohantering kan du ta reda på ditt användar-ID: https://account.mdh.se/default.aspx?ReturnUrl=%2f"],
                 "context_set": ""
         },
         {"tag": "studentmejl",
