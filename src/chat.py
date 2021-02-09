@@ -73,7 +73,7 @@ net = tflearn.fully_connected(net,len(output[0]),activation="softmax")
 net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
-model.fit(training,output,n_epoch=3000,batch_size=8, show_metric=True)
+model.fit(training,output,n_epoch=5quit000,batch_size=8, show_metric=True)
 model.save("model.tflearn")
 
 #Test and Predict
