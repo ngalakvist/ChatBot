@@ -73,7 +73,7 @@ net = tflearn.fully_connected(net,len(output[0]),activation="softmax")
 net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
-model.fit(training,output,n_epoch=5quit000,batch_size=8, show_metric=True)
+model.fit(training,output,n_epoch=30000,batch_size=8, show_metric=True)
 model.save("model.tflearn")
 
 #Test and Predict
@@ -98,15 +98,19 @@ def chat():
         if(inp.lower()=="quit"):
              break
         
-        results =  model.predict([bag_of_word(inp,words)])
+        results =  model.predict([bag_of_word(inp,words)])[0]
         results_index = numpy.argmax(results)
         tag = labels[results_index]
+        print(results)
 
-        for tg in data["intents"]:
-            if(tg["tag"]) == tag:
-                responses = tg["responses"]
+        if results[results_index] > 0.7:
+            for tg in data['intents']:
+                if(tg['tag']) == tag:
+                 responses = tg['responses']
 
-        print(random.choice(responses))  
+            print(random.choice(responses))  
+        else:
+            print("Jag förstå inte,försöka igen!")
 
 chat()
 

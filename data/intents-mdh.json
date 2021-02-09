@@ -1,43 +1,48 @@
 {"intents": [
         {"tag": "Hej",
-                "patterns": ["hej", "vad heter du", "kan du hjälpa mig", "vad kan du göra?", "mdh","kan du hjälpa mig?"],
-                "responses": ["Hjälpa mdh studenterna med deras studentkonto och inloggning","Vad behöver du?","Du kan fråga mig om studentkonto","Jag är smatare en dig"],
+                "patterns": ["hej", "vad heter du", "kan du hjälpa mig", "vad kan du göra?", "Vad ligger mdh","kan du hjälpa mig?","jag älskar dig"],
+                "responses": ["Jag kan hjälpa dig om studentkonto och inloggning på mdh","Vad behöver du?","Du kan fråga mig om studentkonto","Jag kan svara på frågor om studentkonto,konto,lösenord och användarid?","I am Miss-Mdh och single","Mdh ska blir universitet:https://www.mdh.se/student"],
                 "context_set": ""
                },
         {"tag": "användarid",
-         "patterns": ["användar-ID?", "Jag har inte fått mitt användar-ID?", "Vad är användar-ID?", "användarid", "Vad är användarnamn?","Jag har glömt mitt användar-ID"],
+         "patterns": ["användar-ID?", "Jag har inte fått mitt användar-ID?", "Vad är användar-ID?", "användarid", "Vad är användarnamn?","Jag har glömt mitt användar-ID","Jag kan inte logga in"],
          "responses": ["Användar-ID skickas till den mejladress eller mobilnummer du angav när du skapade kontot.", "Via vår kontohantering kan du ta reda på ditt användar-ID:https://account.mdh.se/default.aspx?ReturnUrl=%2f ","Där loggar du in med hela mejladressen: användar-ID@student.mdh.se", "Användar-ID eller användarnamn är det du använder för att logga in i våra system, förutom studentmejl","Via vår kontohantering kan du ta reda på ditt användar-ID: https://account.mdh.se/default.aspx?ReturnUrl=%2f"],
          "context_set": ""
         },
         {"tag": "lösenord",
-         "patterns": ["Jag behöver byta mitt lösenord", "lösenord hur gör jag det?", "Jag har glömt mitt lösenord", "Hur får jag ett nytt lösenord?", "Jag har inget lösenord","lösenord till mitt studentkonto","Hur får man lösenord","Jag behöver byta mitt lösenord","hur byter man lösenord","inget lösenord"],
+         "patterns": ["Jag behöver byta mitt lösenord", "lösenord hur gör jag det?", "Jag har glömt mitt lösenord", "Hur får jag ett nytt lösenord?", "Jag har inget lösenord","lösenord till mitt studentkonto","Hur får man lösenord","Jag behöver byta mitt lösenord","hur byter man lösenord","inget lösenord","Jag kan inte logga in"],
          "responses": ["Du kan förnya ditt lösenord via vår kontohantering https://account.mdh.se/lostpw/","https://account.mdh.se/lostpw/ ","Det gör du via vår kontohantering https://account.mdh.se/default.aspx?ReturnUrl=%2f","När du skapade kontot valde du ett eget lösenord. Om du glömt det kan du byta till ett nytt: https://account.mdh.se/lostpw/"],
          "context_set": ""
         },
         {"tag": "studentkontot",
-         "patterns": ["Hur skapar jag ett studentkonto?", "Jag har inte svenskt personnummer", "När kan jag skapa konto?", "Jag kan inte skapa ett studentkonto", "hur gör jag för att skapa studentkonto"," kan inte skapa konto"],
-         "responses": ["Om du läser en uppdragsutbildning så måste du vända dig till studenttorget@mdh.se", "I början av en termin finns ett visst startdatum för skapande av konto", "läs noga informationen på sidan för ny student: https://www.mdh.se/student/ny-student"],
+         "patterns": ["Hur skapar jag ett studentkonto?", "Jag har inte svenskt personnummer", "När kan jag skapa konto?", "Jag kan inte skapa ett studentkonto", "hur gör jag för att skapa studentkonto","Jag kan inte skapa konto","Jag kan inte logga in"],
+         "responses": ["Om du läser en uppdragsutbildning så måste du vända dig till studenttorget@mdh.se", "I början av en termin finns ett visst startdatum för skapande av konto", "läs noga informationen på sidan för ny student: https://www.mdh.se/student/ny-student","skapa student konto här: https://account.mdh.se/newaccount/"],
          "context_set": ""
         },
         {"tag": "gammalt",
-                "patterns": ["Jag har ett gammalt studentkonto?","kan jag använda mitt gammalt studentkonto fortfarande?"],
+                "patterns": ["Jag har ett gammalt studentkonto?","kan jag använda mitt gammalt studentkonto fortfarande?","Jag kan inte logga in"],
                 "responses": ["Om det var mer än 4 terminer sedan du senast var registrerad på MDH så har ditt konto blivit gallrat","skapa ett nytt via https://account.mdh.se/newaccount/","Annars kan du använda ditt tidigare konto men du behöver kanske uppdatera lösenordet: https://account.mdh.se/lostpw/"],
                 "context_set": ""
         },
         {"tag": "personnummer",
-         "patterns": ["Jag har inte svenskt personnummer", "personnummer", "whats your name?"],
+         "patterns": ["Jag har inte svenskt personnummer", "jag har inte personnummer"],
          "responses": ["Du kontaktar studenttorget@mdh.se så hjälper de dig.", "Om du inte har svenskt personnummer så måste du vända dig till studenttorget@mdh.se för att få hjälp med ditt konto."],
          "context_set": ""
         },
         {"tag": "användarnamn?",
-                "patterns": ["vad är användar-ID eller användernamn?", "Jag har inte fått mitt användar-ID?", "Vad är användar-ID?", "användarid", "Vad är användarnamn?","Jag har glömt mitt användar-ID"],
-                "responses": ["Användar-ID skickas till den mejladress eller mobilnummer du angav när du skapade kontot.", "kontohantering kan du ta reda på ditt användar-ID:https://account.mdh.se/default.aspx?ReturnUrl=%2f ","Där loggar du in med hela mejladressen: användar-ID@student.mdh.se", "Användar-ID eller användarnamn är det du använder för att logga in i våra system, förutom studentmejl","Via vår kontohantering kan du ta reda på ditt användar-ID: https://account.mdh.se/default.aspx?ReturnUrl=%2f"],
+                "patterns": ["vad är användar-ID eller användernamn?", "Jag har inte fått mitt användar-ID?", "Vad är användar-ID?", "användarid", "Vad är användarnamn?","Jag har glömt mitt användar-ID","Jag kan inte logga in"],
+                "responses": ["Användar-ID skickas till den mejladress eller mobilnummer du angav när du skapade kontot.", "kontohantering kan du ta reda på ditt användar-ID:https://account.mdh.se/default.aspx?ReturnUrl=%2f ","Där loggar du in med hela mejladressen: användar-ID@student.mdh.se", "Användar-ID eller användarnamn när skalogga in i våra system, förutom studentmejl","Via vår kontohantering kan du ta reda på ditt användar-ID: https://account.mdh.se/default.aspx?ReturnUrl=%2f"],
                 "context_set": ""
         },
         {"tag": "studentmejl",
-         "patterns": ["Hur loggar jag in på min studentmejl?"],
+         "patterns": ["Hur loggar jag in på min studentmejl?","inloggning med studentmejl"],
          "responses": ["Du loggar in på din studentjmejl med användar-ID@student.mdh.se på https://www.mdh.se/student","Loggar du in med hela mejladressen: användar-ID@student.mdh.se"],
          "context_set": ""
+        },
+        {"tag": "student",
+                "patterns": ["jag är ny student","Vad ska jag göra som ny student?"],
+                "responses": ["Går till : https://www.mdh.se/student/ny-student","skapa student konto här: https://account.mdh.se/newaccount/"],
+                "context_set": ""
         }
    ]
 }
