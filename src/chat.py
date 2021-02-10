@@ -67,12 +67,11 @@ net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
 net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
-""" try:
+try:
     model.load("model.tflearn")
-except: """
-model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-model.save("model.tflearn")
-
+except: 
+    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+    model.save("model.tflearn")
 
 #Bag of words
 def bag_of_words(s, words):
@@ -94,12 +93,17 @@ def chat():
         inp = input("Du: ")
         if inp.lower() == "quit":
             break
-        results = model.predict([bag_of_words(inp, words)])
+        results = model.predict([bag_of_words(inp, words)])[0]
         results_index = numpy.argmax(results)
         tag = labels[results_index]
-        for tg in data["intents"]:
-            if tg['tag'] == tag:
-                responses = tg['responses']
-        print(random.choice(responses))
+        print(results)
+        print(tag)
+        if results[results_index] > 0.7:  
+            for tg in data["intents"]:
+                if tg['tag'] == tag:
+                    responses = tg['responses']
+            print(random.choice(responses))
+        else:
+            print("Jag förstå inte,försöka igen!") 
       
 chat()
