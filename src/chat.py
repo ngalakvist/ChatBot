@@ -123,3 +123,4 @@ def chat_console():
         else:
             print("Jag förstå inte,försöka igen!") 
       
+
