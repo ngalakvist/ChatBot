@@ -11,7 +11,7 @@
          },
         {"tag": "användarnamn",
          "patterns": ["Jag har inte fått mitt användarID?", "Vad är användarID?", "användarid", "Vad är användarnamn?","användarnamn","Jag har glömt mitt användarID","Jag kan inte logga in","jag har glömt mitt användarnamn"],
-         "responses": ["AnvändarID skickas till den mejladress eller mobilnummer du angav när du skapade kontot.", "Ta reda på ditt användarID på https://account.mdh.se/, där loggar du in med hela mejladressen användarID@student.mdh.se", "AnvändarID eller användarnamn är det du använder för att logga in i våra system, förutom studentmejl"],
+         "responses": ["AnvändarID skickas till den mejladress eller mobilnummer du angav när du skapade kontot.", "Ta reda på ditt användarID på https://account.mdh.se/, där loggar du in med hela mejladressen användarID@student.mdh.se", "AnvändarID eller användarnamn är det du använder för att logga in i våra system"],
          "context_set": ""
         },
         {"tag": "lösenord",
