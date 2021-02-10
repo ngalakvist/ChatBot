@@ -85,7 +85,25 @@ def bag_of_words(s, words):
     return numpy.array(bag)
 
 
-#"Chat function for testing"    
+#Web interface
+def chat_bot(input):
+    results = model.predict([bag_of_words(input, words)])[0]
+    results_index = numpy.argmax(results)
+    tag = labels[results_index]
+    responses = ""
+    answer_from_bot = ""
+
+    if results[results_index] > 0.7:  
+        for tg in data["intents"]:
+            if tg['tag'] == tag:
+                responses = tg['responses']
+                answer_from_bot = random.choice(responses)
+            else:
+                answer_from_bot="Jag förstå inte,försöka igen!" 
+    return answer_from_bot
+
+    
+#Console  interface
 def chat():
     print("Börja prata med Mdh chat-bot(type quit to quit)")
     while True:
