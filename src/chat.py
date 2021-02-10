@@ -102,9 +102,9 @@ def chat_bot(input):
                 answer_from_bot="Jag förstå inte,försöka igen!" 
     return answer_from_bot
 
-    
+
 #Console  interface
-def chat():
+def chat_console():
     print("Börja prata med Mdh chat-bot(type quit to quit)")
     while True:
         responses = ""
@@ -123,4 +123,3 @@ def chat():
         else:
             print("Jag förstå inte,försöka igen!") 
       
-chat()
