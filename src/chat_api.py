@@ -13,4 +13,4 @@ api.add_resource(ChatBot, "/chatbot/<string:question>")
 
 if __name__ == "__main__":
 
-    app.run(debug=False)
+    app.run(debug=True)

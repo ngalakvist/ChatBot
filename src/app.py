@@ -8,7 +8,7 @@ class ChatBot(Resource):
     def get(self,question):
         ans = chat_bot(question)
         return {"ans":ans}
- 
+        
 api.add_resource(ChatBot, "/chatbot/<string:question>")
 
 if __name__ == "__main__":
