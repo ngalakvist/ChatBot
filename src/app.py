@@ -7,5 +7,5 @@ api = Api(app)
  
 @app.route("/")
 def chat():
-    return {"Hello Chat bot"}
+    return "Hello Chat bot!"
 
