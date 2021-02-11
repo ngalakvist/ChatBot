@@ -10,7 +10,3 @@ class ChatBot(Resource):
         return {"ans":ans}
  
 api.add_resource(ChatBot, "/chatbot/<string:question>")
-
-if __name__ == "__main__":
-
-    app.run(debug=False)
