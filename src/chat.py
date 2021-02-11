@@ -102,7 +102,6 @@ def chat_bot(input):
     return answer_from_bot
 
 
-
 #Console  interface
 def chat_console():
     print("Börja prata med Mdh chat-bot(type quit to quit)")
