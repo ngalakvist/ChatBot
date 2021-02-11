@@ -84,7 +84,6 @@ def bag_of_words(s, words):
                 bag[i] = 1            
     return numpy.array(bag)
 
-
 #Web interface
 def chat_bot(input):
     results = model.predict([bag_of_words(input, words)])[0]

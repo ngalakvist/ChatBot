@@ -2,5 +2,5 @@ import requests
 
 BASE = "http://127.0.0.1:5000/"
 
-response = requests.get(BASE + "chatbot/hej")
+response = requests.get(BASE + "chatbot/hello")
 print(response.json())
