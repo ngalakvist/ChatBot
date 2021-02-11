@@ -12,7 +12,7 @@ import json
 import pickle
 
 #Get data
-with open("c:/ML/chat_bot/data/intents-mdh.json") as file:
+with open("data/intents-mdh.json") as file:
     data = json.load(file)
 
 try:
@@ -123,4 +123,4 @@ def chat_console():
         else:
             print("Jag förstå inte,försöka igen!") 
       
-
+chat_console()
