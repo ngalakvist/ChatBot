@@ -12,7 +12,7 @@ import json
 import pickle
 
 #Get data
-with open("data/intents-mdh.json") as file:
+with open("data/intents-mdh.json",encoding ='utf-8') as file:
     data = json.load(file)
 
 try:
@@ -90,7 +90,7 @@ def chat_bot(input):
     results_index = numpy.argmax(results)
     tag = labels[results_index] 
 
-    if results[results_index] > 0.7:#Error threshold
+    if results[results_index] > 0.5:#Error threshold
             responses = ""  
             for tg in data["intents"]:
                 if tg['tag'] == tag:                   
@@ -99,7 +99,6 @@ def chat_bot(input):
     else:
         return "Jag förstå inte,försök igen!"
          
-
 
 #Console  interface
 def chat_console():
@@ -113,12 +112,12 @@ def chat_console():
         results_index = numpy.argmax(results)
         tag = labels[results_index]
         
-        if results[results_index] > 0.7:  
+        if results[results_index] > 0.5:  
             for tg in data["intents"]:
                 if tg['tag'] == tag:
                     responses = tg['responses']
             print(random.choice(responses))
         else:
-            print("Jag förstå inte,försöka igen!") 
+            print("Jag förstå inte,försök igen!") 
       
 #chat_console()

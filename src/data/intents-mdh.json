@@ -5,7 +5,7 @@
                 "context_set": ""
                },
         {"tag": "studentkontot",
-                "patterns": ["Hur skapar jag ett studentkonto?", "Jag har inte svenskt personnummer", "När kan jag skapa konto?", "Jag kan inte skapa ett studentkonto", "hur gör jag för att skapa studentkonto","Jag kan inte skapa konto","Jag kan inte logga in","Jag har ett gammalt studentkonto?","kan jag använda mitt gammalt studentkonto?","Jag kan inte logga in"],
+                "patterns": ["Hur skapar jag ett studentkonto?", "Jag har inte svenskt personnummer", "När kan jag skapa konto?", "Jag kan inte skapa ett studentkonto", "hur gör jag för att skapa studentkonto","Jag kan inte skapa konto","Jag kan inte logga in","Jag har ett gammalt studentkonto?","kan jag använda mitt gammalt studentkonto?","Jag kan inte logga in"," mitt studentkonto","studentkonto"],
                 "responses": ["Om du läser en uppdragsutbildning så måste du vända dig till studenttorget@mdh.se", "I början av en termin finns ett visst startdatum för skapande av konto", "läs noga informationen på sidan för ny student:https://www.mdh.se/student/ny-student","skapa student konto här:https://account.mdh.se/newaccount/","Om det var mer än 4 terminer sedan du senast var registrerad på MDH så har ditt konto blivit gallrat","skapa ett nytt via https://account.mdh.se/newaccount/","Du kan använder ditt tidigare konto men du behöver kanske uppdatera lösenordet på https://account.mdh.se/lostpw/"],
                 "context_set": ""
          },
@@ -15,17 +15,17 @@
          "context_set": ""
         },
         {"tag": "lösenord",
-         "patterns": ["Jag behöver byta mitt lösenord", "lösenord hur gör jag det?", "Jag har glömt mitt lösenord", "Hur får jag ett nytt lösenord?", "Jag har inget lösenord","lösenord till mitt studentkonto","Hur får man lösenord","Jag behöver byta mitt lösenord","Jag kan inte logga in"],
+         "patterns": ["Jag behöver byta mitt lösenord", "lösenord", "Jag har glömt mitt lösenord", "Hur får jag ett nytt lösenord?", "Jag har inget lösenord","lösenord till mitt studentkonto","Hur får man lösenord","Jag behöver byta mitt lösenord","Jag kan inte logga in"],
          "responses": ["Du kan förnya ditt lösenord via vår kontohantering https://account.mdh.se/lostpw/","Det gör du via vår kontohantering https://account.mdh.se/default.aspx?ReturnUrl=%2f","Om du glömt det kan du byta till ett nytt på https://account.mdh.se/lostpw/"],
          "context_set": ""
         },
         {"tag": "personnummer",
-         "patterns": ["Jag har inte svenskt personnummer", "jag har inte personnummer"],
+         "patterns": ["Jag har inte svenskt personnummer", "jag har inte personnummer","personnummer"],
          "responses": ["Du kontaktar studenttorget@mdh.se så hjälper de dig.", "Om du inte har svenskt personnummer så måste du vända dig till studenttorget@mdh.se för att få hjälp med ditt konto."],
          "context_set": ""
         },
         {"tag": "studentmejl",
-         "patterns": ["Hur loggar jag in på min studentmejl?","kan jag logga in med studentmejl"],
+         "patterns": ["Hur loggar jag in på min studentmejl?","kan jag logga in med studentmejl","studentmejl","mail"],
          "responses": ["Du loggar in på din studentjmejl med användar-ID@student.mdh.se på https://www.mdh.se/student","Loggar du in med hela mejladressen: användar-ID@student.mdh.se"],
          "context_set": ""
         },
