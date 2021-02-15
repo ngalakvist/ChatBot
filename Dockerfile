@@ -13,6 +13,8 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+RUN python -m nltk.downloader -d /usr/local/share/nltk_data punkt
+
 WORKDIR /app
 COPY . /app
 
