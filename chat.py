@@ -68,9 +68,9 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 try:
-    model.load("model.tflearn")
+     model.load("model.tflearn")
 except: 
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+    model.fit(training, output, n_epoch=1500, batch_size=8, show_metric=True)
     model.save("model.tflearn")
 
 #Bag of words
@@ -95,7 +95,10 @@ def chat_bot(input):
             for tg in data["intents"]:
                 if tg['tag'] == tag:                   
                     responses = tg['responses']
-            return random.choice(responses)
+            if responses:
+              return random.choice(responses)
+            else:
+              return "Du kontaktar studenttorget@mdh.se så hjälper de dig."
     else:
         return "Jag förstå inte,försök igen!"
          
@@ -116,8 +119,11 @@ def chat_console():
             for tg in data["intents"]:
                 if tg['tag'] == tag:
                     responses = tg['responses']
-            print(random.choice(responses))
+            if responses:
+                print(random.choice(responses))
+            else:
+                print("No response")
         else:
             print("Jag förstå inte,försök igen!") 
       
-#chat_console()
+chat_console()
